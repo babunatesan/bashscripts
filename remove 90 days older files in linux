@@ -1,0 +1,2 @@
+#Remove 6th level folder +90 days older files.
+find . -type d  -mindepth 6 -maxdepth 6 -regex "\.\/[a-z].*/[0-9]*" -mtime +90 -exec rm -rf {} \;
